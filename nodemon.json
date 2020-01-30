@@ -1,0 +1,7 @@
+{
+    "env":{
+        "BASE_URL":"http:localhost:3001/",
+        "MONGO_PW":"samflex...",
+        "SECRET_KEY":"secretJwtKey"
+    }
+}
