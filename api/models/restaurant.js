@@ -10,6 +10,7 @@ const sub_menu_item = mongoose.Schema({
     category:{type: String, required:true}
 })
 
+//Schema for submenu
 
 const sub_menu = mongoose.Schema({
     _id: mongoose.Types.ObjectId,
