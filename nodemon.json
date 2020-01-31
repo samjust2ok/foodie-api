@@ -1,7 +1,9 @@
 {
     "env":{
-        "BASE_URL":"http:localhost:3001/",
+        "BASE_URL":"/api",
         "MONGO_PW":"samflex...",
-        "SECRET_KEY":"secretJwtKey"
+        "SECRET_KEY":"secretJwtKey",
+        "CLOUDINARY_API_SECRET":"p_38_krH3vDqXp3nND23YZ0aOZE",
+        "CLOUDINARY_API_KEY":"481323874788742"
     }
 }
