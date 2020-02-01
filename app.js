@@ -9,7 +9,7 @@ const adminRoutes = require('./api/routes/admins');
 //VIEW ENGINE
 app.set('view engine', 'hbs');
 
-mongoose.connect("mongodb+srv://samjust2ok:samflex...@cluster0-zuot8.mongodb.net/test?retryWrites=true&w=majority",{
+mongoose.connect("mongodb+srv://samjust2ok:"+ process.env.MONGO_PW +"@cluster0-zuot8.mongodb.net/test?retryWrites=true&w=majority",{
     useNewUrlParser:true,
     useUnifiedTopology:true
 })
@@ -42,7 +42,7 @@ app.use('/admins', adminRoutes);
 
 
 app.use((req,res,next)=>{
-    const error = new Error('Not Found');
+    const error = new Error('Error:Not Found');
     error.status = 400
     next(error)
 })
