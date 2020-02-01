@@ -8,8 +8,8 @@ const _ = require('lodash');
 
 cloudinary.config({
     cloud_name:'samuelfelix',
-    api_key:'481323874788742',
-    api_secret:'p_38_krH3vDqXp3nND23YZ0aOZE',
+    api_key:process.env.CLOUDINARY_API_KEY,
+    api_secret:process.env.CLOUDINARY_API_SECRET,
 })
 
 exports.getAllRestaurants = (req,res,next)=>{
