@@ -12,8 +12,10 @@ app.set('view engine', 'hbs');
 mongoose.connect("mongodb+srv://samjust2ok:"+ process.env.MONGO_PW +"@cluster0-zuot8.mongodb.net/test?retryWrites=true&w=majority",{
     useNewUrlParser:true,
     useUnifiedTopology:true
-})
+}).catch(error => console.log({...error}));
 
+
+  
 
 
 app.use((req,res,next)=>{
